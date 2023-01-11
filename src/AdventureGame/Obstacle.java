@@ -1,5 +1,7 @@
 package AdventureGame;
 
+import java.util.Random;
+
 public class Obstacle {
     private int Id;
     private String name;
@@ -9,6 +11,7 @@ public class Obstacle {
     private int award;
 
     public Obstacle(int id, String name, int damage, int health, int award) {
+        int rDamage = 0;
         Id = id;
         this.name = name;
         this.damage = damage;
@@ -67,4 +70,5 @@ public class Obstacle {
     public void setOriginalHealth(int originalHealth) {
         this.originalHealth = originalHealth;
     }
+
 }

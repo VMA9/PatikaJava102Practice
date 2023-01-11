@@ -63,7 +63,7 @@ public class ToolStore extends NormalLocation {
                 if (selectedWeapon.getPrice() > this.getP1().getMoney()) {
                     System.out.println("You do not have enough money.");
                 } else {
-                    //satın almanın gerçekleştiği alan
+                    // area of purchase
                     System.out.println(selectedWeapon.getName() + " you bought the black.");
                     int balance = this.getP1().getMoney() - selectedWeapon.getPrice();
                     this.getP1().setMoney(balance);

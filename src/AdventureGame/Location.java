@@ -3,7 +3,7 @@ package AdventureGame;
 import java.util.Scanner;
 
 public abstract class Location {
-    private Player p1;
+    protected Player p1;
     private String name;
     public static Scanner input = new Scanner(System.in);
 
